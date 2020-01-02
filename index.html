@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+		#contenedor{
+			margin-top: 30px;
+			font-size: 20px;
+		}
+		#contenedor-imagenes{
+			margin-top: 30px;
+		}
+		.tarjeta{
+			width: 25%;
+			display: inline-block;
+			height: 250px;
+			margin: 20px;
+	
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- menu -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Moises Mannarino Frontend Javascript</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		</nav>
+		<!-- fin menu -->
+		<div class="row">
+			<div class="col-6">
+				<button type="button" class="btn btn-primary btn-block" id="cagarWithXMLHttpRequest">cargar con objeto XMLHttpRequest</button>
+			</div>
+			<div class="col-6">
+				<button type="button" id="cargarWithFetch" class="btn btn-primary btn-block">cargar con fetch</button>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div id="contenedor" class="col-8">
+				<p>En esta pagina hago dos scripts donde realizo una comunicación asincronica con el servidor utilizando javascript para obtener datos desde dos apis y luego crear dom pintando esos datos en la pagina.</p>
+				<p>En el primer script realizo la carga utilizando el objeto XMLHttpRequest de javascrript para realizar un request get y obtener datos de una api. </p>
+				<p>En el segundo scruipt realizo un request a una api utlizando fetch y obtener los datos de una api, para luego pintar esos datos en el dom.</p>
+		    </div>
+		    <div id="contenedor-imagenes"></div>
+		</div>
+		
+	</div>
+	
+	<script type="text/javascript" src="withXMLHttpRequest.js"></script>
+</body>
+</html>
